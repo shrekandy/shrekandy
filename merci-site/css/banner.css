@@ -1,0 +1,49 @@
+.banner-space{
+  height: 100vh;
+}
+
+.merci-title{
+/*margin-left: auto;
+margin-top: auto;*/
+width: auto;
+margin-left: 20vw;
+margin-top: 30vh;
+}
+
+.merci-title h2{
+  font-size:70px;
+  font-weight: bolder;
+
+}
+
+.merci-title p{
+  font-size: 20px;
+  color: #8f8f8f;
+  text-decoration: none;
+}
+
+.merci-logo{
+  height: auto;
+  width: 80%;
+  margin-top: 11vh;
+/*  margin-left: -70px;
+*/  margin-bottom: 30px;
+}
+
+
+.btn-merci{
+  margin-top: 30px;
+  border: solid 2px black;
+  padding: 10px 60px;
+  font-size: 20px !important;
+  color: black !important;
+}
+
+.btn-merci:hover{
+  border: solid 3px orange;
+}
+
+.browse{
+  text-decoration: none;
+
+}

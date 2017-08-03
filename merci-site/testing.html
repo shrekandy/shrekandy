@@ -1,0 +1,77 @@
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Sunday')" id="defaultOpen">SUNDAY</button>
+  <button class="tablinks" onclick="openCity(event, 'Monday')">MONDAY</button>
+  <button class="tablinks" onclick="openCity(event, 'Pastshows')">PAST SHOWS</button>
+  <button class="tablinks" onclick="openCity(event, 'Videos')">VIDEOS</button>
+</div>
+
+<!-- match the above buttons' id with the div id below -->
+<div id="Sunday" class="tabcontent">
+  <h3>일요일 방송</h3>
+  <p>지민DJ 와 혜준DJ 의 꿀 케미! 저녁 9:30 본방 사수하세요!.</p>
+  <div class="card">
+    <img src="images/sundaylast.jpg" style="width:100%;">
+    <div class="container-card">
+      <h2>3월 19일</h2>
+      <p class="title">오늘 밤 9시, 일요일팀 마지막 방송!
+      특별 디제이 Jin Hyuk Yang 디제이와 우리의 상큼한 쁘디와 함께하는 특별한 마지막 순간!
+      모두 다 함께 해용~ Merci Beaucoup~~!!</p>
+      <p><button>보러가기</button></p>
+    </div>
+  </div>
+</div>
+
+<div id="Monday" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div id="Pastshows" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="Videos" class="tabcontent">
+  <h3>Watch</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+
+<!-- footer -->
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+  </div>
+  <div class="footer-copyright">
+    Merci Beaucoup Radio Club 2017
+  </div>
+</div>
+
+<!-- footer end -->
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+
+
+
+

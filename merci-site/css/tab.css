@@ -1,0 +1,64 @@
+.container-show{
+  margin: 30px;
+}
+
+
+div.tab {
+  margin-top: 15px;
+  margin-left: 20px;
+  overflow: hidden;
+  border-bottom: 1px;
+  background-color: white;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Style the buttons inside the tab */
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    color: orange;
+  }
+
+/* Create an active/current tablink class */
+div.tab button.active {
+  border-bottom: solid 2px orange;
+  color: orange;
+}
+
+
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.tabcontent h3{
+  margin-top: 40px;
+}
+
+.subtitle{
+  font-size: 18px;
+  margin-bottom: 30px;
+  margin-left: 0px;
+}
+
+
+
+
+.tabcontent-vid{
+  margin-top: 40px;
+  margin-left :40px;
+
+}

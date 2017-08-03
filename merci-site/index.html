@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Merci Beacoup Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:300,400,500,700">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+
+  <script>
+  var looper;
+  var degrees = 0;
+  function rotateAnimation(el,speed){
+    var elem = document.getElementById(el);
+    if(navigator.userAgent.match("Chrome")){
+      elem.style.WebkitTransform = "rotate("+degrees+"deg)";
+    } else if(navigator.userAgent.match("Firefox")){
+      elem.style.MozTransform = "rotate("+degrees+"deg)";
+    } else if(navigator.userAgent.match("MSIE")){
+      elem.style.msTransform = "rotate("+degrees+"deg)";
+    } else if(navigator.userAgent.match("Opera")){
+      elem.style.OTransform = "rotate("+degrees+"deg)";
+    } else {
+      elem.style.transform = "rotate("+degrees+"deg)";
+    }
+    looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
+    degrees++;
+    if(degrees > 359){
+      degrees = 1;
+    }
+    document.getElementById("status").innerHTML = "rotate("+degrees+"deg)";
+  }
+  </script>
+</head>
+
+
+<body>
+
+<!-- navbar start -->
+<div class="navbar-wagon navbar-wagon-fixed">
+  <!-- Logo -->
+  <a href="/" class="navbar-wagon-brand">
+    <img src="images/microphone.png" alt="Lewagon" />
+  </a>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+    <a href="" class="navbar-wagon-item navbar-wagon-link">About</a>
+    <a href="" class="navbar-wagon-item navbar-wagon-link">Contact</a>
+    <!-- display page with contact info and FACEBOOK in contact page -->
+
+    <!-- Profile picture with dropdown list -->
+    <div class="navbar-wagon-item hidden-md hidden-lg">
+      <div class="dropdown">
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+         <li><a href="#">About</a></li>
+         <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dropdown appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- navbar end-->
+
+<div class="row">
+<div class="banner-space">
+  <div class="col-xs-12 col-md-5 col-md-offset-1">
+  <div class="merci-title">
+    <h2> 며루치 </h2>
+    <h2>볶음 </h2>
+    <p> 맥길대학교 한인 라디오 </p>
+     <a href="seasons.html" class="btn btn-merci browse">
+       둘러보기
+    </a>
+  </div>
+  </div>
+  <div class="col-xs-12 col-md-5 col-md-offset-1">
+    <div class="merci-logo">
+      <img id="img1" src="images/logo-cd.png" alt="mercilogo1" class="merci-logo">
+      <script>rotateAnimation("img1",30);</script>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<!-- footer -->
+<div class="row">
+  <div class="col-xs-12">
+    <div class="footer">
+      <div class="footer-links">
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+      </div>
+      <div class="footer-copyright">
+        Merci Beaucoup Radio Club 2017
+      </div>
+
+
+      <audio autoplay controls>
+        <source src="audios/secret.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
